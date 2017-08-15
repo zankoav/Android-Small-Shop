@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.alexandrzanko.smallshop.BasketActivity"
+    tools:showIn="@layout/activity_basket">
+
+    <ListView
+        android:id="@+id/listView_order_items"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_above="@id/checkOut"
+        />
+
+    <RelativeLayout android:id="@+id/checkOut"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:paddingTop="10dp"
+        android:background="@android:color/holo_purple"
+        android:layout_alignParentBottom="true"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/checkTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Итого:"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/checkTotalPriceR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="26.00"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@+id/checkTotalPriceRub"
+            />
+
+        <TextView
+            android:id="@+id/checkTotalPriceRub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="20sp"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentRight="true"
+            android:text="руб."
+            />
+
+        <Button
+            android:text="Оформить заказ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="12dp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_green_dark"
+            android:id="@+id/btn_order" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

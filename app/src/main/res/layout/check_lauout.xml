@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/checkOut"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_alignParentBottom="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/checkPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сумма заказа"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        />
+
+    <TextView
+        android:id="@+id/checkPriceR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="26.00"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="4dp"
+        android:layout_toLeftOf="@+id/checkPriceRub"
+        />
+
+    <TextView
+        android:id="@+id/checkPriceRub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_alignParentRight="true"
+        android:text="руб."
+        />
+
+    <TextView
+        android:id="@+id/checkDeliveryPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Стоимость доставки"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/checkPrice"
+        />
+
+    <TextView
+        android:id="@+id/checkDeliveryPriceRub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="12dp"
+        android:layout_alignParentRight="true"
+        android:text="бесплатно"
+        android:layout_below="@+id/checkPriceRub"
+        />
+
+    <TextView
+        android:id="@+id/checkTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Итого"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/checkDeliveryPrice"
+        />
+
+    <TextView
+        android:id="@+id/checkTotalPriceR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="26.00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="4dp"
+        android:layout_toLeftOf="@+id/checkTotalPriceRub"
+        android:layout_below="@+id/checkDeliveryPriceRub"
+        />
+
+    <TextView
+        android:id="@+id/checkTotalPriceRub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginRight="12dp"
+        android:layout_alignParentRight="true"
+        android:text="руб."
+        android:layout_below="@+id/checkDeliveryPriceRub"
+        />
+
+    <TextView
+        android:id="@+id/checkTotalPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вы заработаете"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/checkTotalPrice"/>
+
+    <TextView
+        android:id="@+id/checkTotalPointsR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="260"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="4dp"
+        android:layout_toLeftOf="@+id/checkTotalPointsRub"
+        android:layout_below="@+id/checkTotalPriceR"
+        />
+
+    <TextView
+        android:id="@+id/checkTotalPointsRub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="12dp"
+        android:layout_alignParentRight="true"
+        android:text="баллов"
+        android:layout_below="@+id/checkTotalPriceRub"
+        />
+
+    <Button
+        android:text="Заказать"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="12dp"
+        android:onClick="buttonPressed"
+        android:id="@+id/btn_order" />
+
+</RelativeLayout>
